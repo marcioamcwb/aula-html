@@ -1,0 +1,33 @@
+
+        /*
+            seletor de tag
+        */        
+        h1 {
+            color: brown;
+        }
+
+        h3 {
+            color: olive;
+        }
+
+        /* seletor de classe */
+        .verde {
+            color: green;
+        }        
+
+        .fundo {
+            background: peru;
+        }
+
+        h3.fundo {
+            color: blue;
+        }
+        
+        .fundo h3{
+            color: red;
+        }
+
+        /* seleciona pelo id */
+        #tit4 {
+            color: indigo;
+        }
