@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Aula de Jquery</title>
+
+    <script
+        src="/media/aluno/48B4-1F1A/Curso ELABORATA - 2021/Curso ELABORATA - 2021/aula-html/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .titulo {
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="titulo">Aula de Jquery - MAM - 07-05-2021</h1>
+
+    <input id="cor" type="color"/>
+
+    <button onclick="mudar()">Mudar cor</button>
+    <button id="mudar">Mudar Fundo</button>
+
+
+    <script>
+
+        function mudar() {
+
+            var el = jQuery(".titulo");  // a variável el busca o conteúdo da classe titulo
+            var valor = $("#cor").val();
+
+            console.log(valor);  // devolve o valor da cor que foi selecionada
+
+            el.css("color", valor);  // código novo com cor selecionada
+
+            // el.css("color", "red");  // código anterior cor fixa red
+
+        }
+
+        function mudarFundo() {
+
+            var el = jQuery(".titulo");
+            var valor = $("#cor").val();
+
+            // el.css("background-color", "yellow");
+            el.css("background-color", valor);
+        }
+
+        // jQuery("#mudar").click(mudarFundo);
+        $("#mudar").click(mudarFundo);  // $ forma abreviada de chamar o jQuery 
+        
+    </script>
+
+</body>
+
+</html>
